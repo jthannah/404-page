@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="stylesheet.css">
+
+<body>
+    <main>
+        <section class="content">
+            <h1>404</h1>
+            <h3>Sorry, we can't seem to find Joey anymore!</h3>
+            <p>Joey has has moved, changed his name or is no longer available.</p>
+
+            <button id="click-me">Click Me!</button>
+
+            <ul id="comment-list" class="">
+                <li>That was brave! Click it again!</li>
+                <li>Okay, you take commands well. You may be trainable...But don't click it again.</li>
+                <li>I was afraid of this.. we'll work on following directions.</li>
+                <li>...now you're just clicking to see what happens.</li>
+                <li>The expirement is over..</li>
+                <li>stop</li>
+                <li>Do not stop clicking!</li>
+                <li>well, reverse psychology doesn't work on you..</li>
+                <li>Please stop?</li>
+                <li>Being nice doesn't work either, eh?</li>
+                <li>Okay, I take back what I said earlier.. You're not worth training.</li>
+                <li>Don't you have work to do?</li>
+                <li>See what happens when you click it 100 times!!</li>
+                <li>lol, are you really going to??</li>
+                <li>Maybe you'll be worthy of training after all!</li>
+                <li>YOU DID IT!! You my friend, are a real click ninja!</li>
+            </ul>
+        </section>
+    </main>
+    
+    <img src="me.webp" alt="Joey Hannah Mug">
+
+    <script>
+        let clicks = 0;
+        let clickClass = "";
+
+        const list = document.getElementById('comment-list')
+
+        document.getElementById('click-me').addEventListener('click', () => {
+            clicks++;
+            switch(clicks) {
+                case 1: clickClass = 'one'; break;
+                case 2: clickClass = 'two'; break;
+                case 3: clickClass = 'three'; break;
+                case 4: clickClass = 'four'; break;
+                case 5: clickClass = 'five'; break;
+                case 6: clickClass = 'six'; break;
+                case 7: clickClass = 'seven'; break;
+                case 8: clickClass = 'eight'; break;
+                case 9: clickClass = 'nine'; break;
+                case 10: clickClass = 'ten'; break;
+                case 11: clickClass = 'eleven'; break;
+                case 12: clickClass = 'twelve'; break;
+                case 13: clickClass = 'thirteen'; break;
+                case 50: clickClass = 'fifty'; break;
+                case 75: clickClass = 'seventyfive'; break;
+                case 100: clickClass = 'hundred'; break;
+                default: clickClass = clickClass
+            }
+
+            list.classList.add(clickClass);
+        })
+    </script>
+</body>
+</html> 

@@ -1,0 +1,160 @@
+html {
+    background: url(waves.svg) no-repeat;
+    background-size: cover;
+    font-size: 16px;
+    font-family: 'roboto';
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+}
+
+main section {
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+section.content {
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+    max-width: 75%;
+}
+
+img {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    filter: drop-shadow(0px 30px 60px #222);
+    max-height: 100vh;
+    max-width: 45%;
+    z-index: 0;
+}
+
+h1 {
+    font-size: 5rem;
+    margin: 0;
+}
+
+button {
+    background: none;
+    border: 2px solid #d1e9f9;
+    box-shadow: 0px 0px 10px -5px #111;
+    border-radius: 5px;
+    width: max-content;
+    padding: 0.25rem 1rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: color .2s, border-color .2s, background-color .2s;
+    margin: 0 auto;
+}
+
+button:hover {
+    border: 2px solid #66A3CE;
+    background: #2771a3;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: none;
+}
+
+.one li:first-child {
+    display: block;
+}
+
+.two li:nth-child(-n+2) {
+    display: block;
+}
+
+.three li:nth-child(-n+3) {
+    display: block;
+}
+
+.four li:nth-child(-n+4) {
+    display: block;
+}
+
+.five li:nth-child(-n+5) {
+    display: block;
+}
+
+.six li:nth-child(-n+6) {
+    display: block;
+}
+
+.seven li:nth-child(-n+7) {
+    display: block;
+}
+
+.eight li:nth-child(-n+8) {
+    display: block;
+}
+
+.nine li:nth-child(-n+9) {
+    display: block;
+}
+
+.ten li:nth-child(-n+10) {
+    display: block;
+}
+
+.eleven li:nth-child(-n+11) {
+    display: block;
+}
+
+.twelve li:nth-child(-n+12) {
+    display: block;
+}
+
+.thirteen li:nth-child(-n+13) {
+    display: block;
+}
+
+.fifty li:nth-child(-n+14) {
+    display: block;
+}
+
+.seventyfive li:nth-child(-n+15) {
+    display: block;
+}
+
+.hundred li:nth-child(-n+16) {
+    display: block;
+}
+
+@media only screen and (min-width: 900px) {
+    html, body {
+        font-size: 25px;
+    }
+
+    main {
+        flex-direction: row;
+    }
+
+    section.content {
+        padding: 5rem;
+        text-align: left;
+    }
+
+    button {
+        margin: 0;
+    }
+}
