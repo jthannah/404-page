@@ -28,15 +28,16 @@
                 <li>Okay, I take back what I said earlier.. You're not worth training.</li>
                 <li>Don't you have work to do?</li>
                 <li>See what happens when you click it 100 times!!</li>
-                <li>lol, are you really going to??</li>
+                <li>You're at 50.. you are really going for it aren't you?</li>
                 <li>Maybe you'll be worthy of training after all!</li>
-                <li>YOU DID IT!! You my friend, are a real click ninja!</li>
+                <li>100 clicks!! YOU DID IT!! You my friend, are a real click ninja!</li>
             </ul>
         </section>
     </main>
     
     <img src="me.webp" alt="Joey Hannah Mug">
 
+    <script src="confetti.js"></script>
     <script>
         let clicks = 0;
         let clickClass = "";
@@ -61,12 +62,14 @@
                 case 13: clickClass = 'thirteen'; break;
                 case 50: clickClass = 'fifty'; break;
                 case 75: clickClass = 'seventyfive'; break;
-                case 100: clickClass = 'hundred'; break;
+                case 100: clickClass = 'hundred'; startConfetti(); clicks = 0; break;
                 default: clickClass = clickClass
             }
 
             list.classList.add(clickClass);
         })
+
+
     </script>
 </body>
 </html> 
