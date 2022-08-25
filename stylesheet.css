@@ -70,6 +70,9 @@ button:hover {
 ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-flow: column-reverse;
+    gap: 0.5rem;
 }
 
 ul li {
